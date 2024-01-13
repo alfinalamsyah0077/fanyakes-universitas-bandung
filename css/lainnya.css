@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+:root {
+  --bg-primary: #0e1a60;
+  --color-primary: #0e1a60;
+}
+:root {
+  --primary: #0026ff;
+  --bg: #000000;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+h2 {
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+section,
+.container {
+  position: relative;
+}
+.lead {
+  font-weight: 500;
+}
+
+/*Services Section*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(0, 60, 255, 0.8);
+  border-bottom: 1px solid #513c28;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+.section-title {
+  margin-bottom: 60px;
+}
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+section.services-section {
+  padding: 100px 0px 50px;
+  background: #efefef;
+}
+
+.services-box {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.services-box h3 {
+  margin: 15px 0px 20px;
+}
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+footer .social {
+  padding: 1rem 0;
+}
+footer .social a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .social a:hover {
+  color: var(--bg);
+}
+
+footer .link {
+  margin-bottom: 1.4rem;
+}
+
+footer .link a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .link a:hover {
+  color: var(--bg);
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
+
+/*Responsive css*/
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  header .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 11px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-toggler-icon {
+    background: #fff;
+    padding: 20px;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .reviews-section {
+    padding: 40px 0px;
+  }
+
+  .section-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .review-box p {
+    font-size: 15px;
+  }
+
+  .banner-text-wrap h1 {
+    font-size: 39px;
+  }
+  .team-box {
+    margin-bottom: 40px;
+  }
+  .hero-banner {
+    padding: 137px 0px;
+    min-height: auto;
+  }
+
+  .booking-section {
+    padding: 40px 0px;
+  }
+
+  footer {
+    padding: 40px 10px;
+  }
+
+  section.blog-section {
+    padding: 40px 0px;
+  }
+
+  section.team-section {
+    padding: 30px 0px;
+  }
+
+  section.services-section {
+    padding: 30px 0px;
+  }
+
+  .services-box {
+    margin-bottom: 20px;
+  }
+
+  .about-media {
+    margin-bottom: 30px;
+  }
+
+  .features-box {
+    margin-bottom: 30px;
+  }
+
+  section.about-section {
+    padding: 30px 0px 40px;
+  }
+}

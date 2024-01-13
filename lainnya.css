@@ -1,0 +1,156 @@
+:root {
+  --primary: #3c93da;
+  --bg: #ffffff;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: rgb(255, 255, 255);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 7%;
+  background-color: #0d558f;
+  border-bottom: 2px solid #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#menu {
+  display: none;
+}
+
+.lainnya {
+  min-height: 100vh;
+  padding: 55px 0 50px 0;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: block;
+  flex-wrap: wrap;
+}
+
+.lainnya .box-lainnya {
+  display: grid;
+  padding: 0.5rem 7%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  row-gap: 50px;
+}
+.lainnya .box-lainnya .box {
+  text-align: center;
+  color: #000000;
+  transition: 0.3s ease;
+  padding: 0.3rem 6% 1rem;
+  max-width: 40rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  justify-content: center;
+}
+
+.lainnya .box-lainnya .box:hover {
+  transform: translateY(-40px);
+}
+.lainnya .box-lainnya .box img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.lainnya .box-lainnya .box button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  background-color: var(--primary);
+  color: #000000;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+.lainnya .box-lainnya .box button:hover {
+  background-color: #0d558f;
+  transition: all 0.3s ease;
+}
+
+.lainnya .box-lainnya .box h1 {
+  margin: 1.5rem auto 1rem;
+}
+
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+footer .social {
+  padding: 1rem 0;
+}
+footer .social a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .social a:hover {
+  color: var(--bg);
+}
+
+footer .link {
+  margin-bottom: 1.4rem;
+}
+
+footer .link a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .link a:hover {
+  color: var(--bg);
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}

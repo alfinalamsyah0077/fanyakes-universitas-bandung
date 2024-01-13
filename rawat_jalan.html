@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTRASI PASIEN</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- My style -->
+
+    <!-- fhater fonts -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My style -->
+
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="reg.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar-reg">
+      <div class="navbar-logo">RAWAT JALAN</div>
+
+      <div class="navbar-extra">
+        <a name="back" value="Go back!" onclick="history.back()"
+          ><i data-feather="chevron-left"></i
+        ></a>
+        <a href="" id="search"><i data-feather="search"></i></a>
+        <a href="index.html" id="home"><i data-feather="home"></i></a>
+      </div>
+    </nav>
+    <!-- vanbar end -->
+    <section class="reg" id="reg">
+      <div
+        style="background-color: rgb(255, 255, 255)"
+        class="container p-3 my-3 border"
+      >
+        <h1 class="text-center">RAWAT JALAN</h1>
+        <form id="form" method="post">
+          <div class="alert alert-dark">
+            <strong>A. IDENTITAS PASIEN</strong>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>NO RM :</label>
+                <input
+                  type="number"
+                  name="nama"
+                  class="form-control"
+                  placeholder="NOMOR REKAM MEDIS"
+                />
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Nomor NIK :</label>
+                <input
+                  type="number"
+                  name="nik"
+                  class="form-control"
+                  placeholder="Masukan NIK Lengkap"
+                />
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="form-group">
+                <label>Nama Lengkap :</label>
+                <input
+                  type="text"
+                  name="nama"
+                  class="form-control"
+                  placeholder="Masukan Nama Lengkap"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label> Tempat Lahir :</label>
+                <input
+                  type="text"
+                  name="tempat"
+                  class="form-control"
+                  placeholder="Masukan Tempat Lahir"
+                />
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Tanggal Lahir :</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  name="tanggal_lahir"
+                  placeholder="Tanggal lahir"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Umur :</label>
+                <input
+                  type="text"
+                  name="umur"
+                  class="form-control"
+                  placeholder="Umur"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Jenis Kelamin : </label>
+                <select class="form-control" name="kelamin">
+                  <option>Pilih</option>
+                  <option value="LAKI-LAKI">LAKI-LAKI</option>
+                  <option value="PEREMPUAN">PEREMPUAN</option>
+                  <option value="TIDAK DAPAT DI TENTUKAN">
+                    TIDAK DAPAT DI TENTUKAN
+                  </option>
+                  <option value="TIDAK MENGISI">TIDAK MENGISI</option>
+                  <option value="TIDAK DI KETAHUI">TIDAK DI KETAHUI</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Agama : </label>
+                <select class="form-control" name="kelamin">
+                  <option>Pilih</option>
+                  <option value="Islam">Islam</option>
+                  <option value="Kristen (Protestan)">
+                    Kristen (Protestan)
+                  </option>
+                  <option value="Katolik">Katolik</option>
+                  <option value="Hindu">Hindu</option>
+                  <option value="Budha">Budha</option>
+                  <option value="Konghucu">Konghucu</option>
+                  <option value="Penghayat">Penghayat</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Suku :</label>
+                <select class="form-control" name="agama">
+                  <option>Pilih</option>
+                  <option value="Sunda">Sunda</option>
+                  <option value="Jawa">Jawa</option>
+                  <option value="Betawi">Betawi</option>
+                  <option value="Minang">Minang</option>
+                  <option value="Batak">Batak</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Bahasa Yang di Kuasai :</label>
+                <input
+                  type="text"
+                  name="Bahasa"
+                  class="form-control"
+                  placeholder="Bahasa"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-dark">
+            <strong>B. GENERAL CONSENT/PERSETUJUAN UMUM</strong>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Tanggal :</label>
+                <input
+                  type="date"
+                  name="tanggal"
+                  class="form-control"
+                  value="tangal"
+                />
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Jam :</label>
+                <input
+                  type="time"
+                  name="jam"
+                  class="form-control"
+                  value="jam"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-dark">
+            <strong>IDENTITAS PASIEN</strong>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>NO RM :</label>
+                <input
+                  type="text"
+                  name="nama"
+                  class="form-control"
+                  placeholder="NOMOR REKAM MEDIS"
+                />
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Nomor NIK :</label>
+                <input
+                  type="text"
+                  name="nik"
+                  class="form-control"
+                  placeholder="Masukan NIK Lengkap"
+                />
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="form-group">
+                <label>Nama Lengkap :</label>
+                <input
+                  type="text"
+                  name="nama"
+                  class="form-control"
+                  placeholder="Masukan Nama Lengkap"
+                />
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Tanggal Lahir :</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  name="tanggal_lahir"
+                  placeholder="Tanggal lahir"
+                />
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Jenis Kelamin : </label>
+                <select class="form-control" name="kelamin">
+                  <option>Pilih</option>
+                  <option value="LAKI-LAKI">LAKI-LAKI</option>
+                  <option value="PEREMPUAN">PEREMPUAN</option>
+                  <option value="TIDAK DAPAT DI TENTUKAN">
+                    TIDAK DAPAT DI TENTUKAN
+                  </option>
+                  <option value="TIDAK MENGISI">TIDAK MENGISI</option>
+                  <option value="TIDAK DI KETAHUI">TIDAK DI KETAHUI</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Persetujuan Pasien :</label>
+                <select name="persetujuan pasien" class="form-control">
+                  <option>Pilih</option>
+                  <option value="Ya">Ya</option>
+                  <option value="Tidak">Tidak</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Informasi Ketentuan Pembayaran :</label>
+                <select name="persetujuan pasien" class="form-control">
+                  <option>Pilih</option>
+                  <option value="Setuju">Setuju</option>
+                  <option value="Tidak Setuju">Tidak Setuju</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Informasi tentang Hak dan Kewajiban Pasien :</label>
+                <select name="persetujuan pasien" class="form-control">
+                  <option>Pilih</option>
+                  <option value="Setuju">Setuju</option>
+                  <option value="Tidak Setuju">Tidak Setuju</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Informasi tentang Tata Tertib RS :</label>
+                <select name="persetujuan pasien" class="form-control">
+                  <option>Pilih</option>
+                  <option value="Setuju">Setuju</option>
+                  <option value="Tidak Setuju">Tidak Setuju</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Kebutuhan Penterjemah Bahasa :</label>
+                <select name="persetujuan pasien" class="form-control">
+                  <option>Pilih</option>
+                  <option value="Setuju">Setuju</option>
+                  <option value="Tidak Setuju">Tidak Setuju</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Kebutuhan Rohaniawan :</label>
+                <select name="persetujuan pasien" class="form-control">
+                  <option>Pilih</option>
+                  <option value="Setuju">Setuju</option>
+                  <option value="Tidak Setuju">Tidak Setuju</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Pelepasan Informasi / Kerahasiaan Informasi :</label>
+                <select name="persetujuan pasien" class="form-control">
+                  <option>Pilih</option>
+                  <option value="Setuju">Setuju</option>
+                  <option value="Tidak Setuju">Tidak Setuju</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label
+                  >Hasil Pemeriksaan Penunjang dapat Diberikan kepada Pihak
+                  Penjamin :</label
+                >
+                <select name="persetujuan pasien" class="form-control">
+                  <option>Pilih</option>
+                  <option value="Setuju">Setuju</option>
+                  <option value="Tidak Setuju">Tidak Setuju</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label
+                  >Hasil Pemeriksaan Penunjang dapat Diakses oleh Peserta Didik
+                  :</label
+                >
+                <select name="persetujuan pasien" class="form-control">
+                  <option>Pilih</option>
+                  <option value="Setuju">Setuju</option>
+                  <option value="Tidak Setuju">Tidak Setuju</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label
+                  >Anggota Keluarga Lain yang dapat Diberikan Informasi
+                  Data-data Pasien :</label
+                >
+                <input
+                  type="text"
+                  name="Nama"
+                  value="nama "
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Fasyankes tertentu dalam rangka rujukan :</label>
+                <select name="persetujuan pasien" class="form-control">
+                  <option>Pilih</option>
+                  <option value="Setuju">Setuju</option>
+                  <option value="Tidak Setuju">Tidak Setuju</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-dark">
+            <strong>C. FORMLIR UMUM/ASESMEN AWAL RAWAT JALAN</strong>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Tanggal Masuk</label>
+                <input
+                  type="date"
+                  name="tanggal"
+                  class="form-control"
+                  value="tanggal"
+                />
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Jam Masuk</label>
+                <input
+                  type="time"
+                  name="jam"
+                  class="form-control"
+                  value="jam"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-dark">
+            <strong>ANAMNESIS</strong>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Keluhan Utama</label>
+                <textarea
+                  class="form-control"
+                  name="Keluhan Utama"
+                  id="Keluhan Utama"
+                  cols="150"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Riwayat Penyakit</label>
+                <input
+                  type="text"
+                  name="Riwayat Penyakit"
+                  class="form-control"
+                  placeholder="Riwayat Penyakit"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Riwayat Alergi </label>
+                <select name="Riwayat Alergi" class="form-control">
+                  <option>PIlih</option>
+                  <option value="Obat">Obat</option>
+                  <option value="Makanan">Makanan</option>
+                  <option value="Cuaca">Cuaca</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Riwayat Pengobatan</label>
+                <input
+                  type="text"
+                  name="Riwayat Pengobatan"
+                  class="form-control"
+                  placeholder="Riwayat Pengobatan"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-dark">
+            <strong>PEMERIKSAAN FISIK</strong>
+          </div>
+          <div class="container">
+            <div class="row gx-3">
+              <div class="col-md-4">
+                <div class="about-media">
+                  <label>Gambar Anatomi Tubuh : </label>
+                  <img src="images/anatomi3.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <strong>--KEADAAN UMUM--</strong>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Tingkat kesadaran :</label>
+                <select name="Tingkat kesadaran" class="form-control">
+                  <option>Pilih</option>
+                  <option value="Sadar baik/Alert">Sadar Baik/Alert : 0</option>
+                  <option value="Berespon dengan kata-kata / voice">
+                    Berespon dengan kata-kata / voice : 1
+                  </option>
+                  <option value="Hanya berespons jika dirangsang nyeri / pain">
+                    Hanya berespons jika dirangsang nyeri / pain : 2
+                  </option>
+                  <option value="Pasien tidak sadar / unresponsive">
+                    Pasien tidak sadar / unresponsive : 3
+                  </option>
+                  <option value="Gelisah atau bingung">
+                    Gelisah atau bingung : 4
+                  </option>
+                  <option value="Acute Confusional States">
+                    Acute Confusional States : 5
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <strong>--VITAL SIGN--</strong>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Denyut Jantung (/s) :</label>
+                <input
+                  type="text"
+                  name="Vital Sign"
+                  class="form-control"
+                  placeholder="Vital Sign"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Pernapasan (/s) :</label>
+                <input
+                  type="text"
+                  name="Vital Sign"
+                  class="form-control"
+                  placeholder="Vital Sign"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <strong>--TEKANAN DARAH--</strong>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Systole (/mmHg)</label>
+                <input
+                  type="text"
+                  name="Systole (/mmHg)"
+                  class="form-control"
+                  placeholder="Systole (/mmHg)"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Diastole (/mmHg)</label>
+                <input
+                  type="text"
+                  name="Diastole (/mmHg)"
+                  class="form-control"
+                  placeholder="Diastole (/mmHg)"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Suhu Tubuh (℃) </label>
+                <input
+                  type="text"
+                  name="Suhu Tubuh (℃) "
+                  class="form-control"
+                  placeholder="Suhu Tubuh (℃) "
+                />
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-dark">
+            <strong>PEMERIKSAAN SPESIALISTIK </strong>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>--RIWAYAT PENGGUNAAN OBAT--</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Nama Obat :</label>
+                <input
+                  type="text"
+                  name="Nama Obat"
+                  class="form-control"
+                  placeholder="Nama Obat"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Dosis :</label>
+                <input
+                  type="text"
+                  name="Dosis"
+                  class="form-control"
+                  placeholder="Dosis"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Waktu Penggunaan :</label>
+                <input
+                  type="text"
+                  name="Waktu Penggunaan"
+                  class="form-control"
+                  placeholder="Waktu Penggunaan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Rencana Rawat :</label>
+                <input
+                  type="text"
+                  name="Rencana Rawat"
+                  class="form-control"
+                  placeholder="Rencana Rawat"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Instruksi Medis dan Keperawatan :</label>
+                <textarea
+                  class="form-control"
+                  name="Instruksi Medis dan Keperawatan"
+                  id="Instruksi Medis dan Keperawatan"
+                  cols="100"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>--PEMERIKSAAN PENUNJANG-</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>NO RM :</label>
+                <input
+                  type="number"
+                  name="nama"
+                  class="form-control"
+                  placeholder="NOMOR REKAM MEDIS"
+                />
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Nomor NIK :</label>
+                <input
+                  type="number"
+                  name="nik"
+                  class="form-control"
+                  placeholder="Masukan NIK Lengkap"
+                />
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="form-group">
+                <label>Nama Lengkap :</label>
+                <input
+                  type="text"
+                  name="nama"
+                  class="form-control"
+                  placeholder="Masukan Nama Lengkap"
+                />
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Tanggal Lahir :</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  name="tanggal_lahir"
+                  placeholder="Tanggal lahir"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Jenis Kelamin : </label>
+                <select class="form-control" name="kelamin">
+                  <option>Pilih</option>
+                  <option value="LAKI-LAKI">LAKI-LAKI</option>
+                  <option value="PEREMPUAN">PEREMPUAN</option>
+                  <option value="TIDAK DAPAT DI TENTUKAN">
+                    TIDAK DAPAT DI TENTUKAN
+                  </option>
+                  <option value="TIDAK MENGISI">TIDAK MENGISI</option>
+                  <option value="TIDAK DI KETAHUI">TIDAK DI KETAHUI</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Tanggal Masuk</label>
+                <input
+                  type="date"
+                  name="tanggal"
+                  class="form-control"
+                  value="tanggal"
+                />
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Jam Masuk</label>
+                <input
+                  type="time"
+                  name="jam"
+                  class="form-control"
+                  value="jam"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Status Puasa Pasien : </label>
+                <select class="form-control" name="Status Puasa Pasien">
+                  <option>Pilih</option>
+                  <option value="Ya">Ya</option>
+                  <option value="Tidak">Tidak</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-dark">
+            <strong>LABORATORIUM</strong>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Nama Pemeriksaan :</label>
+                <input
+                  type="text"
+                  name="Nama Pemeriksaan"
+                  class="form-control"
+                  placeholder="Nama Pemeriksaan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Nomor Permintaan :</label>
+                <input
+                  type="number"
+                  name="Nomor Permintaan"
+                  class="form-control"
+                  placeholder="Nomor Permintaan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Waktu Permintaan :</label>
+                <input
+                  type="datetime-local"
+                  name="Waktu Permintaan"
+                  class="form-control"
+                  placeholder="Waktu Permintaan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Dokter Pengirim :</label>
+                <input
+                  type="text"
+                  name="Dokter Pengirim"
+                  class="form-control"
+                  placeholder="Dokter Pengirim"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>No.Telepon Dokter Pengirim :</label>
+                <input
+                  type="text"
+                  name="No.Telepon Dokter Pengirim"
+                  class="form-control"
+                  placeholder="No.Telepon Dokter Pengirim"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label
+                  >Nama Fasilitas Pelayanan Kesehatan yang Mengirim Spesimen
+                  Klinis :</label
+                >
+                <input
+                  type="text"
+                  name="Nama Fasilitas Pelayanan Kesehatan"
+                  class="form-control"
+                  placeholder="Nama Fasilitas Pelayanan Kesehatan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Unit Pengirim :</label>
+                <input
+                  type="text"
+                  name="Unit Pengirim"
+                  class="form-control"
+                  placeholder="Unit Pengirim"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Prioritas Pemeriksaan :</label>
+                <select class="form-control" name="Prioritas Pemeriksaan">
+                  <option>Pilih</option>
+                  <option value="CITO">CITO</option>
+                  <option value="Non CITO">Non CITO</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Diagnosis / Masalah :</label>
+                <input
+                  type="text"
+                  name="Diagnosis / Masalah :"
+                  class="form-control"
+                  placeholder="Diagnosis / Masalah :"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Catatan Permintaan :</label>
+                <input
+                  type="text"
+                  name="Catatan Permintaan"
+                  class="form-control"
+                  placeholder="Catatan Permintaan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Metode Pengiriman Hasil :</label>
+                <select class="form-control" name="Metode Pengiriman Hasil ">
+                  <option>Pilih</option>
+                  <option value="Penyerahan langsung">
+                    Penyerahan langsung
+                  </option>
+                  <option value="Dikirim via surel">Dikirim via surel</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Asal Sumber Spesimen Klinis :</label>
+                <select
+                  class="form-control"
+                  name="Asal Sumber Spesimen Klinis "
+                >
+                  <option>Pilih</option>
+                  <option value="Darah">Darah</option>
+                  <option value="Urin">Urin</option>
+                  <option value="Feses">Feses</option>
+                  <option value="Jaringan tubuh">Jaringan tubuh</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Lokasi Pengambilan Spesimen Klinis :</label>
+                <input
+                  type="text"
+                  name="Lokasi Pengambilan Spesimen Klinis"
+                  class="form-control"
+                  placeholder="Lokasi Pengambilan Spesimen Klinis"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Jumlah Spesimen Klinis :</label>
+                <input
+                  type="text"
+                  name="Jumlah Spesimen Klinis"
+                  class="form-control"
+                  placeholder="Jumlah Spesimen Klinis"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Volume Spesimen Klinis (ml) :</label>
+                <input
+                  type="text"
+                  name="Volume Spesimen Klinis (ml)"
+                  class="form-control"
+                  placeholder="Volume Spesimen Klinis (ml)"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Cara / Metode Pengambilan Spesimen Klinis :</label>
+                <input
+                  type="text"
+                  name="Cara / Metode Pengambilan Spesimen Klinis"
+                  class="form-control"
+                  placeholder="Cara / Metode Pengambilan Spesimen Klinis"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Waktu Pengambilan Spesimen Klinis :</label>
+                <input
+                  type="datetime-local"
+                  name="Waktu Pengambilan Spesimen Klinis"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Kondisi Spesimen Klinis pada saat Pengambilan :</label>
+                <input
+                  type="text"
+                  name="Kondisi Spesimen Klinis pada saat Pengambilan"
+                  class="form-control"
+                  placeholder="Kondisi Spesimen Klinis pada saat Pengambilan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Waktu Fiksasi Spesimen Klinis :</label>
+                <input
+                  type="datetime-local"
+                  name="Waktu Fiksasi Spesimen Klinis"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Cairan Fiksasi (ml) :</label>
+                <input
+                  type="text"
+                  name="Cairan Fiksasi (ml)"
+                  class="form-control"
+                  placeholder="Cairan Fiksasi (ml)"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Volume Cairan Fiksasi (ml) :</label>
+                <input
+                  type="text"
+                  name="Volume Cairan Fiksasi (ml)"
+                  class="form-control"
+                  placeholder="Volume Cairan Fiksasi (ml)"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Nama Petugas yang Mengambil Spesimen Klinis :</label>
+                <input
+                  type="text"
+                  name="Nama Petugas yang Mengambil Spesimen Klinis"
+                  class="form-control"
+                  placeholder="Nama Petugas yang Mengambil Spesimen Klinis"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Nama Petugas yang Mengantarkan Spesimen Klinis :</label>
+                <input
+                  type="text"
+                  name="Nama Petugas yang Mengantarkan Spesimen Klinis"
+                  class="form-control"
+                  placeholder="Nama Petugas yang Mengantarkan Spesimen Klinis"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Nama Petugas yang Menerima Spesimen Klinis :</label>
+                <input
+                  type="text"
+                  name="Nama Petugas yang Menerima Spesimen Klinis"
+                  class="form-control"
+                  placeholder="Nama Petugas yang Menerima Spesimen Klinis"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Nama Petugas yang Menganalisis Spesimen Klinis :</label>
+                <input
+                  type="text"
+                  name="Nama Petugas yang Menganalisis Spesimen Klinis"
+                  class="form-control"
+                  placeholder="Nama Petugas yang Menganalisis Spesimen Klinis"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label
+                  >Waktu Pemeriksaan/Pengujian dan Pengolahan Spesimen Klinis
+                  :</label
+                >
+                <input
+                  type="datetime-local"
+                  name="Waktu Pemeriksaan/Pengujian dan Pengolahan Spesimen Klinis "
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Hasil Pemeriksaan :</label>
+                <select
+                  name="Hasil Pemeriksaan"
+                  id="Hasil Pemeriksaan"
+                  class="form-control"
+                >
+                  <option value="Pilih">Pilih</option>
+                  <option value="Nilai Hasil Pemeriksaan">
+                    Nilai Hasil Pemeriksaan
+                  </option>
+                  <option value="Nilai Normal/Tidak Normal">
+                    Nilai Normal/Tidak Normal
+                  </option>
+                  <option value="Nilai Rujukan">Nilai Rujukan</option>
+                  <option value="Nilai Kritis">Nilai Kritis</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Interpretasi Hasil Pemeriksaan :</label>
+                <input
+                  type="text"
+                  name="Interpretasi Hasil Pemeriksaan"
+                  class="form-control"
+                  placeholder="Interpretasi Hasil Pemeriksaan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label
+                  >Nama Dokter yang Memvalidasi/Memverifikasi Hasil Pemeriksaan
+                  :</label
+                >
+                <input
+                  type="text"
+                  name="Nama Dokter yang Memvalidasi"
+                  class="form-control"
+                  placeholder="Nama Dokter"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label
+                  >Nama Dokter yang Menginterpretasi Hasil Pemeriksaan :</label
+                >
+                <input
+                  type="text"
+                  name="Nama Dokter yang Menginterpretasi Hasil Pemeriksaan"
+                  class="form-control"
+                  placeholder="Nama Dokter"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label
+                  >Waktu Hasil Pemeriksaan Keluar dari Laboratorium :</label
+                >
+                <input
+                  type="datetime-local"
+                  name="Waktu Hasil Pemeriksaan Keluar dari Laboratorium"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label
+                  >Waktu Hasil Pemeriksaan Laboratorium Diterima Unit Pengirim
+                  :</label
+                >
+                <input
+                  type="datetime-local"
+                  name="Waktu Hasil Pemeriksaan Laboratorium Diterima Unit Pengirim "
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label
+                  >Nama Fasilitas Kesehatan yang Melakukan Pemeriksaan :</label
+                >
+                <input
+                  type="text"
+                  name="Nama Fasilitas Kesehatan yang Melakukan Pemeriksaan "
+                  class="form-control"
+                  placeholder="Nama Fasilitas Kesehatan yang Melakukan Pemeriksaan "
+                />
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-dark">
+            <strong>RADIOLOGI</strong>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Nama Pemeriksaan Radiologi :</label>
+                <select
+                  name="Nama Pemeriksaan Radiologi"
+                  id="Nama Pemeriksaan Radiologi"
+                  class="form-control"
+                >
+                  <option value="Pilih">Pilih</option>
+                  <option value="X-ray">X-ray</option>
+                  <option value="CT Scan">CT Scan</option>
+                  <option value="USG">USG</option>
+                  <option value="MRI">MRI</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Jenis Pemeriksaan Radiologi :</label>
+                <select
+                  name="Jenis Pemeriksaan Radiologi"
+                  id="Nama Pemeriksaan Radiologi"
+                  class="form-control"
+                >
+                  <option value="Pilih">Pilih</option>
+                  <option value="Cranium">Cranium</option>
+                  <option value="Gigi geligi">Gigi geligi</option>
+                  <option value="Vertebra">Vertebra</option>
+                  <option value="Badan">Badan</option>
+                  <option value="Ekstremitas atas">Ekstremitas atas</option>
+                  <option value="Ekstremitas Bawah">Ekstremitas Bawah</option>
+                  <option value="Kontras Saluran Cerna">
+                    Kontras Saluran Cerna
+                  </option>
+                  <option value="Kontras Saluran Kencing">
+                    Kontras Saluran Kencing
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label> Nomor Permintaan Radiologi :</label>
+                <input
+                  type="text"
+                  name="Nomor Permintaan Radiologi "
+                  class="form-control"
+                  placeholder="Nomor Permintaan Radiologi "
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Waktu Permintaan Radiologi :</label>
+                <input
+                  type="datetime-local"
+                  name="Waktu Permintaan Radiologi "
+                  class="form-control"
+                  placeholder="Waktu Permintaan Radiologi "
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Dokter Pengirim :</label>
+                <input
+                  type="text"
+                  name="Dokter Pengirim"
+                  class="form-control"
+                  placeholder="Dokter Pengirim"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Nomor Telepon Dokter Pengirim :</label>
+                <input
+                  type="text"
+                  name="Nomor Telepon Dokter Pengirim"
+                  class="form-control"
+                  placeholder="Nomor Telepon Dokter Pengirim"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label
+                  >Nama Fasilitas Kesehatan yang Mengirim Permintaan Radiologi
+                  :</label
+                >
+                <input
+                  type="text"
+                  name="Nama Fasilitas Kesehatan yang Mengirim Permintaan Radiologi"
+                  class="form-control"
+                  placeholder="Nama Fasilitas Kesehatan yang Mengirim Permintaan Radiologi"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Unit Pengirim Permintaan Radiologi :</label>
+                <input
+                  type="text"
+                  name="Unit Pengirim Permintaan Radiologi"
+                  class="form-control"
+                  placeholder="Unit Pengirim Permintaan Radiologi"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Prioritas Pemeriksaan :</label>
+                <select class="form-control" name="Prioritas Pemeriksaan">
+                  <option>Pilih</option>
+                  <option value="CITO">CITO</option>
+                  <option value="Non CITO">Non CITO</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Diagnosis Kerja / Masalah :</label>
+                <input
+                  type="text"
+                  name="Diagnosis Kerja / Masalah"
+                  class="form-control"
+                  placeholder="Diagnosis Kerja / Masalah"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Catatan Permintaan :</label>
+                <input
+                  type="text"
+                  name="Catatan Permintaan"
+                  class="form-control"
+                  placeholder="Catatan Permintaan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Metode Pengiriman Hasil :</label>
+                <select class="form-control" name="Metode Pengiriman Hasil ">
+                  <option>Pilih</option>
+                  <option value="Penyerahan langsung">
+                    Penyerahan langsung
+                  </option>
+                  <option value="Dikirim via surel">Dikirim via surel</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label
+                  >Status Alergi Pasien terhadap Bahan Kontras/Zat Lainnya
+                  :</label
+                >
+                <select
+                  class="form-control"
+                  name="Status Alergi Pasien terhadap Bahan Kontras/Zat Lainnya"
+                >
+                  <option>Pilih</option>
+                  <option value="Ya">Ya</option>
+                  <option value="Tidak">Tidak</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Status Kehamilan :</label>
+                <select class="form-control" name="Status Kehamilan">
+                  <option>Pilih</option>
+                  <option value="Hamil">Hamil</option>
+                  <option value="Tidak Hamil">Tidak Hamil</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Tanggal dan Waktu Pemeriksaan Radiologi :</label>
+                <input
+                  type="datetime-local"
+                  name="Tanggal dan Waktu Pemeriksaan Radiologi"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Jenis Bahan Kontras :</label>
+                <input
+                  type="text"
+                  name="Jenis Bahan Kontras"
+                  class="form-control"
+                  placeholder="Jenis Bahan Kontras"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-dark">
+            <strong>HASIL PEMERIKSAAN RADIOLOGI</strong>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="form-group">
+                <label>Foto Hasil Pemeriksaan</label>
+                <input
+                  type="file"
+                  name="foto"
+                  class="form-control"
+                  placeholder="Masukan File"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label
+                  >Nama Dokter yang Menginterpretasi Hasil Pemeriksaan</label
+                >
+                <input
+                  type="text"
+                  name="Nama Dokter yang Menginterpretasi Hasil Pemeriksaan"
+                  class="form-control"
+                  placeholder="Nama Dokter yang Menginterpretasi Hasil Pemeriksaan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Interpretasi Radiologi</label>
+                <input
+                  type="text"
+                  name="Interpretasi Radiologi"
+                  class="form-control"
+                  placeholder="Interpretasi Radiologi"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-dark">
+            <strong>DIAGNOSIS</strong>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Diagnosis Awal / Masuk :</label>
+                <input
+                  type="text"
+                  name="Diagnosis Awal / Masuk"
+                  class="form-control"
+                  placeholder="Diagnosis Awal / Masuk"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Diagnosis Akhir /Keluar :</label>
+                <input
+                  type="text"
+                  name="Diagnosis Primer / Utama"
+                  class="form-control"
+                  placeholder="Diagnosis Primer / Utama"
+                />
+                <input
+                  type="text"
+                  name="Diagnosis Sekunder / Penyerta"
+                  class="form-control"
+                  placeholder="Diagnosis Sekunder / Penyerta"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-dark">
+            <strong
+              >Persetujuan Tindakan/Penolakan Tindakan (Informed
+              Consent)</strong
+            >
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Nama Pasien :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="nama"
+                  placeholder="Nama Pasien"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Nama Dokter Yang Memberi Penjelasan :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="nama"
+                  placeholder="Nama Dokter"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Nama Keluarga Pasien :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="nama"
+                  placeholder="Nama Keluarga Pasien"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Tindakan Yang Dilakukan :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Tindakan Yang Dilakukan"
+                  placeholder="Tindakan Yang Dilakukan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Konsekuensi Dari Tindakan :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Konsekuensi Dari Tindakan"
+                  placeholder="Konsekuensi Dari Tindakan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Persetujuan/ Penolakan Tindakan :</label>
+                <select
+                  class="form-control"
+                  name="Persetujuan/ Penolakan Tindakan"
+                >
+                  <option>Pilih</option>
+                  <option value="Ya">Ya</option>
+                  <option value="Tidak">Tidak</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Tanggal Pemberian Penjelasan Tindakan :</label>
+                <input
+                  type="datetime-local"
+                  class="form-control"
+                  name="Tanggal Pemberian Penjelasan Tindakan"
+                  placeholder="Tanggal Pemberian Penjelasan Tindakan"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-dark">
+            <strong>TERAPI</strong>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>--TINDAKAN--</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Nama Tindakan dan Kode ICD 9 :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Nama Tindakan dan Kode ICD 9"
+                  placeholder="Nama Tindakan dan Kode ICD 9"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Petugas yang Melaksanakan :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Petugas yang Melaksanakan"
+                  placeholder="Petugas yang Melaksanakan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Tanggal Pelaksanaan Tindakan :</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  name="Tanggal Pelaksanaan Tindakan"
+                  placeholder="Tanggal Pelaksanaan Tindakan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Waktu Mulai Tindakan :</label>
+                <input
+                  type="time"
+                  class="form-control"
+                  name="Waktu Mulai Tindakan"
+                  placeholder="Waktu Mulai Tindakan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Waktu Selesai Tindakan :</label>
+                <input
+                  type="time"
+                  class="form-control"
+                  name="Waktu Selesai Tindakan"
+                  placeholder="Waktu Selesai Tindakan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Alat Medis yang Digunakan :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Alat Medis yang Digunakan"
+                  placeholder="Alat Medis yang Digunakan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>BMHP :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="BMHP"
+                  placeholder="BMHP"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>--OBAT--</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Tanggal Penulisan Resep :</label>
+                <input
+                  type="datetime-local"
+                  class="form-control"
+                  name="Tanggal Penulisan Resep "
+                  placeholder="Tanggal Penulisan Resep "
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>ID Resep :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="ID Resep "
+                  placeholder="ID Resep "
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Nama Obat :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Nama Obat "
+                  placeholder="Nama Obat  "
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>ID Obat :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="ID Obat "
+                  placeholder="ID Obat "
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Bentuk / Sediaan :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Bentuk / Sediaan "
+                  placeholder="Bentuk / Sediaan "
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Jumlah Obat :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Jumlah Obat "
+                  placeholder="Jumlah Obat"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Metode / Rute Pemberian :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Metode / Rute Pemberian "
+                  placeholder="Metode / Rute Pemberian"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Dosis Obat yang Diberikan :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Dosis Obat yang Diberikan "
+                  placeholder="Dosis Obat yang Diberikan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Unit :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Unit "
+                  placeholder="Unit"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Frekuensi/Interval :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Frekuensi/Interval"
+                  placeholder="Frekuensi/Interval"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Aturan Tambahan :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Aturan Tambahan"
+                  placeholder="Aturan Tambahan"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Catatan Resep :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Catatan Resep"
+                  placeholder="Catatan Resep"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Status Resep :</label>
+                <select class="form-control" name="Status Resep">
+                  <option>Pilih</option>
+                  <option value="Pending">Pending</option>
+                  <option value="Sudah diberikan">Sudah diberikan</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Kondisi Saat Meninggalkan Rumah Sakit :</label>
+                <select class="form-control" name="Status Resep">
+                  <option>Pilih</option>
+                  <option value="Sembuh">Sembuh</option>
+                  <option value="Meninggal >48 jam">Meninggal >48 jam</option>
+                  <option value="Meninggal <48 jam">Meninggal <48 jam</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Rencana Tindak Lanjut :</label>
+                <select class="form-control" name="Status Resep">
+                  <option>Pilih</option>
+                  <option value="Dikonsulkan ke poli lain">
+                    Dikonsulkan ke poli lain
+                  </option>
+                  <option value="Di rujuk ke RS lain">
+                    Di rujuk ke RS lain
+                  </option>
+                  <option value="Rawat">Rawat</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>--Instruksi untuk Tindak Lanjut--</label>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Kontrol Ke :</label>
+                <input
+                  type="text"
+                  name="nama"
+                  placeholder="kontrol ke"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Tanggal :</label>
+                <input
+                  type="date"
+                  name="Tanggal"
+                  placeholder="tanggal"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Dalam Keadaan Darurat Dapat Menghubungi :</label>
+                <input
+                  type="text"
+                  name="Dalam Keadaan Darurat Dapat Menghubungi"
+                  placeholder="Dalam Keadaan Darurat Dapat Menghubungi"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Sarana transportasi untuk rujuk :</label>
+                <select class="form-control" name="Sarana transportasi ">
+                  <option>Pilih</option>
+                  <option value="Ambulans">Ambulans</option>
+                  <option value="Mobil">Mobil</option>
+                  <option value="Motor">Motor</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-success">
+            <strong>
+              <input type="checkbox" name="pernyataan1" value="pernyataan1" />
+              Saya menyatakan data yang di isi sudah benar
+            </strong>
+            <br />
+            <strong>
+              <input type="checkbox" name="pernyataan2" value="pernyataan2" />
+              Jika salah saya siap menerima sangsi
+            </strong>
+          </div>
+
+          <center>
+            <button
+              type="button"
+              name="back"
+              class="btn btn-primary"
+              value="Go back!"
+              onclick="history.back()"
+            >
+              BACK
+            </button>
+            <button type="submit" name="submit" class="btn btn-success">
+              SEND
+            </button>
+            <button type="reset" name="reset" class="btn btn-secondary">
+              RESET
+            </button>
+          </center>
+        </form>
+      </div>
+    </section>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
